@@ -1,0 +1,21 @@
+img{
+    width: 500px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 100px;
+    text-align: center;
+    background-color: rgb(242, 242, 242);
+}
+
+.container{
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 100px;
+    background-color: rgb(255, 0, 140);
+}
