@@ -3,6 +3,7 @@ h2{
     text-align: left;
     margin-top: 25px;
     font-weight: bold;
+    position: relative;
 }
 
 body{
@@ -20,4 +21,9 @@ a{
     margin: 20px 30px;
     text-decoration: none;
     color: black;
+}
+.cart{
+    position: absolute; /* Take the cart link out of the normal document flow */
+    top: 0; /* Align to the top of the h2 element */
+    right: 0;
 }
