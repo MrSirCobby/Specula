@@ -15,4 +15,7 @@ p{
     text-align: left;
     width: 300px;
 }
-
+a{
+    margin-left: 50px;
+    font-size: 10px;
+}
