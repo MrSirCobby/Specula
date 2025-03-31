@@ -1,15 +1,14 @@
 h2{
-    font-size: 50px;
+    font-size: 24px;
     text-align: left;
     margin-top: 10px;
     font-weight: bold;
-    background: rgb(47, 153, 148);
 }
 
 body{
     font-family: Arial, sans-serif;
     margin: 100px;
-    text-align: center;
+    background-color: floralwhite;
 }
 
 p{
