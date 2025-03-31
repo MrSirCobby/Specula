@@ -17,4 +17,7 @@ p{
 }
 a{
     font-size: 12px;
+    margin: 20px 30px;
+    text-decoration: none;
+    color: black;
 }
