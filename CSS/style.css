@@ -11,10 +11,6 @@ body{
     background-color: floralwhite;
 }
 
-p{
-    text-align: left;
-    width: 300px;
-}
 a{
     margin-left: 50px;
     font-size: 10px;
@@ -26,11 +22,11 @@ a{
     font-size: 24px;
 }
 .carousel{
-    width: 900px;
-    height: 200px;
+    width: auto;
+    height: 400px;
     background-position: center;
     background-size: cover;
-    background-image: url("../Images/orange-glasses-image.png");
+    background-image: url("../Images/ImageJ1.jpeg");
 }
 .fade{
     -webkit-animation: 1.5s fade;
@@ -43,4 +39,8 @@ a{
 @keyframes fade{
     from {opacity: 0.4}
     to{opacity: 1}
+}
+
+.midtext{
+    text-align: center;
 }
