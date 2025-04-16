@@ -1,4 +1,4 @@
-const images = ["Images/ImageJ1.jpeg", "Images/ImagesJ2.jpeg", "Images/ImageJ3.jpeg"];
+const images = ["Images/ImageJ1.jpeg", "Images/ImageJ2.jpeg", "Images/ImageJ3.jpeg"];
 const carousel = document.querySelector(".carousel");
 const interval = setInterval(function() {
   startCarousel();
