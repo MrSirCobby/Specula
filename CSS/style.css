@@ -1,9 +1,18 @@
-h2.fixed{
+.TopBar {
     font-size: 24px;
     text-align: left;
-    margin-top: 10px;
+    margin: 0;
     font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: floralwhite; 
+    padding: 15px 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
 }
+
 
 body{
     font-family: Arial, sans-serif;
@@ -20,6 +29,10 @@ a{
 .largelink{
     margin-left: 0px;
     font-size: 24px;
+}
+.cart{
+    font-size: 20px;
+    margin-left: 920px;
 }
 .carousel{
     width: auto;
@@ -44,3 +57,4 @@ a{
 .midtext{
     text-align: center;
 }
+
