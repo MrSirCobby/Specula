@@ -17,9 +17,23 @@ img{
     width: 400px;
     height: 300px;
     display: inline-block;
-    border: 2px solid rgb(188, 188, 188); 
-    margin: 10px;
+    border: 3px solid rgba(205, 202, 202, 0.525); 
+    margin: 20px;
 }
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
   
 body{
     font-family: Arial, sans-serif;
@@ -64,4 +78,6 @@ a{
 .midtext{
     text-align: center;
 }
-
+h3{
+    text-align: center;
+}
