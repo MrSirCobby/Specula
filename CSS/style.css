@@ -29,6 +29,7 @@ a {
 .largelink {
     margin-left: 0px;
     font-size: 24px;
+    color: rgb(137, 85, 30); 
 }
 
 .cart {
@@ -36,6 +37,7 @@ a {
     margin-left: 1040px;
 }
 
+/*Carousel*/
 .carousel {
     width: auto;
     height: 500px;
@@ -62,10 +64,19 @@ a {
     text-align: center;
 }
 
+/*Headings*/
 h3 {
+    font-weight: 900;
     text-align: center;
 }
 
+h4 {
+    font-weight: 800;
+    text-align: center;
+    color: rgb(164, 104, 39);
+}
+
+/*Horizonatal Scrolling*/
 .scroll-container {
     position: relative;
     display: flex;
@@ -116,6 +127,11 @@ h3 {
     width: 300px;
     height: 225px;
     border: 3px solid rgba(205, 202, 202, 0.525); 
+    transition: filter 0.3s ease;
+}
+
+.scrollmenu img:hover {
+    filter: brightness(45%); 
 }
 
 .product-name {
@@ -128,11 +144,43 @@ h3 {
     margin: 0;
 }
 
+/*Footer*/
 footer {
-    background-color: rgb(88, 88, 88); 
-    color: white;
-    text-align: center;
+    background-color: rgb(164, 104, 39); 
+    color: rgb(0, 0, 0);
+    text-align: left;
     padding: 70px 0;
     margin-top: 70px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+footer h5 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+}
+
+footer p {
+    font-size: 15px;
+    text-align: right;
+}
+
+footer .resources {
+    position: absolute;
+    bottom: 10px;
+    right: 10px; 
+    margin-top: 30px; 
+    font-size: 12px;  
+    text-align: left; 
+}
+
+footer .resources a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+    display: block; 
+}
+
+footer .resources a:hover {
+    text-decoration: underline; 
 }
