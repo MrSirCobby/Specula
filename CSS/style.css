@@ -66,11 +66,43 @@ h3 {
     text-align: center;
 }
 
+.scroll-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
 
-div.scrollmenu {
+.scroll-arrow {
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.scroll-arrow.left {
+    margin-right: 5px;
+}
+
+.scroll-arrow.right {
+    margin-left: 5px;
+}
+
+.scrollmenu {
     overflow-x: auto;
     white-space: nowrap;
-    padding: 10px;
+    scroll-behavior: smooth;
+    flex: 1;
+
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
+.scrollmenu::-webkit-scrollbar {
+    display: none; 
 }
 
 .scrollmenu .product {
@@ -92,7 +124,15 @@ div.scrollmenu {
 }
 
 .product-cost {
-    color: #555;
+    color: rgb(166, 166, 166);
     margin: 0;
 }
 
+footer {
+    background-color: rgb(88, 88, 88); 
+    color: white;
+    text-align: center;
+    padding: 70px 0;
+    margin-top: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
