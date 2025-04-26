@@ -175,6 +175,17 @@ h4 {
 .productset img:hover {
     filter: brightness(45%); 
 }
+.orange-product-name {
+    background-color: rgb(224, 164, 99);
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+
+.orange-product-cost {
+    background-color: rgb(224, 164, 99);
+
+    margin: 0;
+}
 /*Footer*/
 footer {
     background-color: rgb(164, 104, 39); 
