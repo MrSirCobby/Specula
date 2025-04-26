@@ -149,18 +149,22 @@ h4 {
 
 .product-container {
     position: relative;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .productset {
-    white-space: pre;
+    overflow-x: auto;
+    white-space: normal;
+    flex: 1;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
 }
 .productset .product {
     display: inline-block;
     text-align: center;
     margin: 10px;
-    width: 50px;
+    width: 300px;
 }
 .productset img {
     width: 300px;
