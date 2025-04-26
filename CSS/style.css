@@ -65,6 +65,9 @@ a {
 }
 
 /*Headings*/
+h1{
+    padding-left: 50px;
+}
 h3 {
     font-weight: 900;
     text-align: center;
@@ -144,6 +147,30 @@ h4 {
     margin: 0;
 }
 
+.product-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.productset {
+    white-space: pre;
+}
+.productset .product {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    width: 50px;
+}
+.productset img {
+    width: 300px;
+    height: 225px;
+    border: 3px solid rgba(205, 202, 202, 0.525); 
+    transition: filter 0.3s ease;
+}
+.productset img:hover {
+    filter: brightness(45%); 
+}
 /*Footer*/
 footer {
     background-color: rgb(164, 104, 39); 
