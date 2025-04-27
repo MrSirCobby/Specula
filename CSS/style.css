@@ -1,9 +1,11 @@
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 10px;
     background-color: floralwhite;
 }
 
+/* Top Bar */
 .TopBar {
     font-size: 24px;
     text-align: left;
@@ -16,7 +18,7 @@ body {
     background-color: floralwhite; 
     padding: 15px 20px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 a {
@@ -26,10 +28,14 @@ a {
     color: rgb(20, 19, 19);
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .largelink {
-    margin-left: 0px;
+    margin-left: 0;
     font-size: 24px;
-    color: rgb(137, 85, 30); 
+    color: rgb(137, 85, 30);
 }
 
 .cart {
@@ -37,7 +43,7 @@ a {
     margin-left: 1040px;
 }
 
-/*Carousel*/
+/* Carousel */
 .carousel {
     width: auto;
     height: 500px;
@@ -52,25 +58,30 @@ a {
 }
 
 @-webkit-keyframes fade {
-    from {opacity: 0.4}
-    to {opacity: 1}
-}
-@keyframes fade {
-    from {opacity: 0.4}
-    to {opacity: 1}
+    from { opacity: 0.4 }
+    to { opacity: 1 }
 }
 
+@keyframes fade {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+
+/* Mid Text Section */
 .midtext {
     text-align: center;
+    margin-top: 50px;
 }
 
-/*Headings*/
-h1{
-    padding-left: 50px;
+h1 {
+    padding-left: 10px;
 }
+
 h3 {
     font-weight: 900;
     text-align: center;
+    margin-top: 30px;
 }
 
 h4 {
@@ -79,7 +90,7 @@ h4 {
     color: rgb(164, 104, 39);
 }
 
-/*Horizonatal Scrolling*/
+/* Horizontal Scrolling */
 .scroll-container {
     position: relative;
     display: flex;
@@ -105,6 +116,7 @@ h4 {
     margin-left: 5px;
 }
 
+/* Products Row  */
 .scrollmenu {
     overflow-x: auto;
     white-space: nowrap;
@@ -112,81 +124,57 @@ h4 {
     flex: 1;
 
     -ms-overflow-style: none; 
-    scrollbar-width: none;  
+    scrollbar-width: none; 
 }
 
 .scrollmenu::-webkit-scrollbar {
     display: none; 
 }
 
-.scrollmenu .product {
-    display: inline-block;
+/* Product Formatiing */
+.product {
     text-align: center;
     margin: 10px;
-    width: 300px;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.scrollmenu img {
-    width: 300px;
-    height: 225px;
-    border: 3px solid rgba(205, 202, 202, 0.525); 
+.product img {
+    width: 350px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid rgba(205, 202, 202, 0.525);
     transition: filter 0.3s ease;
+    border-radius: 8px;
 }
 
-.scrollmenu img:hover {
-    filter: brightness(45%); 
+.product img:hover {
+    filter: brightness(45%);
+    cursor: pointer;
 }
 
 .product-name {
     font-weight: bold;
-    margin: 5px 0 0 0;
+    margin: 8px 0 0 0;
+    font-size: 16px;
+    color: #333;
 }
 
 .product-cost {
     color: rgb(166, 166, 166);
-    margin: 0;
+    margin: 2px 0 0 0;
+    font-size: 14px;
 }
 
-.product-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
+/* Product Set */
 .productset {
-    overflow-x: auto;
-    white-space: normal;
     flex: 1;
     -ms-overflow-style: none; 
-    scrollbar-width: none;  
-}
-.productset .product {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    width: 300px;
-}
-.productset img {
-    width: 300px;
-    height: 225px;
-    border: 3px solid rgba(205, 202, 202, 0.525); 
-    transition: filter 0.3s ease;
-}
-.productset img:hover {
-    filter: brightness(45%); 
-}
-.orange-product-name {
-    background-color: rgb(224, 164, 99);
-    font-weight: bold;
-    margin: 5px 0 0 0;
+    scrollbar-width: none;
 }
 
-.orange-product-cost {
-    background-color: rgb(224, 164, 99);
-
-    margin: 0;
-}
-/*Footer*/
+/* Footer Styling */
 footer {
     background-color: rgb(164, 104, 39); 
     color: rgb(0, 0, 0);
@@ -218,11 +206,11 @@ footer .resources {
 }
 
 footer .resources a {
-    color: rgb(0, 0, 0); 
-    text-decoration: none; 
-    display: block; 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
 }
 
 footer .resources a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }

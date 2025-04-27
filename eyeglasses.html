@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EyeGlasses</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="Javascript/product-selection.js"></script> 
 </head>
 <body>
     <div class="TopBar">
@@ -17,33 +18,61 @@
 
     <br><br><br><br>
     <h1>Eyeglasses</h1>
-    <br><br><br>
+
     <div class="product-container">
         <div class="productset">
-            <div class="product"><img src="Images/Best1.png" alt="Best1">
-                <p class="orange-product-name">ClearSight</p>
-                <p class="orange-product-cost">$49.99</p>
-            </div>
-            <div class="product"><img src="Images/Best2.png" alt="Best2">
-                <p class="orange-product-name">VisionPlus</p>
-                <p class="orange-product-cost">$59.99</p>
-            </div>
-            <div class="product"><img src="Images/Best3.png" alt="Best3">
-                <p class="orange-product-name">SmartLook</p>
-                <p class="orange-product-cost">$39.99</p>
-            </div>
-            <div class="product"><img src="Images/Best4.png" alt="Best4">
-                <p class="orange-product-name">LightFlex</p>
-                <p class="orange-product-cost">$44.99</p>
-            </div>
-            <div class="product"><img src="Images/Best5.png" alt="Best5">
-                <p class="orange-product-name">UrbanLite</p>
-                <p class="orange-product-cost">$54.99</p>
-            </div>
-            <div class="product"><img src="Images/Best6.png" alt="Best6">
-                <p class="orange-product-name">Retro</p>
-                <p class="orange-product-cost">$64.99</p>
-            </div>
+            <div class="product">
+                <a href="product.html" onclick="selectProduct('ClearSight', 49.99, 'Images/Best1.png')">
+                  <img src="Images/Best1.png" alt="Best1">
+                </a>
+                <p class="product-name">ClearSight</p>
+                <p class="product-cost">$49.99</p>
+              </div>
+        
+              <!-- Product 2 -->
+              <div class="product">
+                <a href="product.html" onclick="selectProduct('VisionPlus', 59.99, 'Images/Best2.png')">
+                  <img src="Images/Best2.png" alt="Best2">
+                </a>
+                <p class="product-name">VisionPlus</p>
+                <p class="product-cost">$59.99</p>
+              </div>
+        
+              <!-- Product 3 -->
+              <div class="product">
+                <a href="product.html" onclick="selectProduct('SmartLook', 39.99, 'Images/Best3.png')">
+                  <img src="Images/Best3.png" alt="Best3">
+                </a>
+                <p class="product-name">SmartLook</p>
+                <p class="product-cost">$39.99</p>
+              </div>
+        
+              <!-- Product 4 -->
+              <div class="product">
+                <a href="product.html" onclick="selectProduct('LightFlex', 44.99, 'Images/Best4.png')">
+                  <img src="Images/Best4.png" alt="Best4">
+                </a>
+                <p class="product-name">LightFlex</p>
+                <p class="product-cost">$44.99</p>
+              </div>
+        
+              <!-- Product 5 -->
+              <div class="product">
+                <a href="product.html" onclick="selectProduct('UrbanLite', 54.99, 'Images/Best5.png')">
+                  <img src="Images/Best5.png" alt="Best5">
+                </a>
+                <p class="product-name">UrbanLite</p>
+                <p class="product-cost">$54.99</p>
+              </div>
+        
+              <!-- Product 6 -->
+              <div class="product">
+                <a href="product.html" onclick="selectProduct('Retro', 64.99, 'Images/Best6.png')">
+                  <img src="Images/Best6.png" alt="Best6">
+                </a>
+                <p class="product-name">Retro</p>
+                <p class="product-cost">$64.99</p>
+              </div>
         </div>
     </div>
 
