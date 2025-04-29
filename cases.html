@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cases</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="Javascript/product-selection.js"></script> 
 </head>
 <body>
     <div class="TopBar">
@@ -14,5 +15,68 @@
         <a href="cases.html">Cases</a> 
         <a href="Cart.html" class="cart">🛒</a>
     </div>
+
+    <br><br><br><br>
+    <h1>Cases</h1>
+
+    <div class="productset">
+        <div class="product">
+            <a href="product.html" onclick="selectProduct('Velvet Black Case', 15.49, 'Images/Latest4.png')">
+              <img src="Images/Latest4.png" alt="Case1">
+            </a>
+            <p class="product-name">Velvet Black Case</p>
+            <p class="product-cost">$15.49</p>
+          </div>
+    
+          <!-- Product 2 -->
+          <div class="product">
+            <a href="product.html" onclick="selectProduct('Britain Case', 18.99, 'Images/Latest5.png')">
+              <img src="Images/Latest5.png" alt="Case2">
+            </a>
+            <p class="product-name">Britain Case</p>
+            <p class="product-cost">$18.99</p>
+          </div>
+    
+          <!-- Product 3 -->
+          <div class="product">
+            <a href="product.html" onclick="selectProduct('Black Case', 12.50, 'Images/Case.png')">
+              <img src="Images/Case.png" alt="Case3">
+            </a>
+            <p class="product-name">Black Case</p>
+            <p class="product-cost">$12.50</p>
+          </div>
+    
+          <!-- Product 4 -->
+          <div class="product">
+            <a href="product.html" onclick="selectProduct('Navy Blue Case', 13.45, 'Images/Case2.png')">
+              <img src="Images/Case2.png" alt="Case4">
+            </a>
+            <p class="product-name">Navy Blue Case</p>
+            <p class="product-cost">$13.45</p>
+          </div>
+    
+          <!-- Product 5 -->
+          <div class="product">
+            <a href="product.html" onclick="selectProduct('Sleek Brown Case', 11.23, 'Images/Case3.png')">
+              <img src="Images/Case3.png" alt="Case5">
+            </a>
+            <p class="product-name">Sleek Brown Case</p>
+            <p class="product-cost">$11.23</p>
+          </div>
+
+    </div>
+
+    <br><br><br><br><br>
+
+    <footer>
+        <h5>By Colby & Atsuto</h5>
+        <div class="resources">
+            <p>Resources Used</p>
+            <ul>
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools</a>
+                <a href="https://groklearning.com/" target="_blank">Groklearning</a>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

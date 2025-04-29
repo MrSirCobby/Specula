@@ -75,7 +75,7 @@ a:hover {
 }
 
 h1 {
-    padding-left: 10px;
+    text-align: center;
 }
 
 h3 {
@@ -131,7 +131,7 @@ h4 {
     display: none; 
 }
 
-/* Product Formatiing */
+/* Product Formatting */
 .product {
     text-align: center;
     margin: 10px;
@@ -169,9 +169,10 @@ h4 {
 
 /* Product Set */
 .productset {
-    flex: 1;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* Footer Styling */
@@ -180,7 +181,7 @@ footer {
     color: rgb(0, 0, 0);
     text-align: left;
     padding: 70px 0;
-    margin-top: 70px;
+    margin-top: 30px;
     position: relative;
 }
 
