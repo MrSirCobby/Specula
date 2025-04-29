@@ -10,13 +10,24 @@ body {
     margin-right: 180px;
     font-size: 30px; 
     border: 2px solid #000000;
-    padding: 30px;
     border-radius: 15px;
 }
 
 .add:hover{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     text-decoration: none;
+}
+
+/* Button */
+button{
+    outline: none;
+    border: none;
+    padding: 50px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 5px;
+    border-radius: 15px;
 }
 
 /* Top Bar */
