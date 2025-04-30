@@ -1,7 +1,6 @@
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    margin: 10px;
     background-color: floralwhite;
 }
 
@@ -104,46 +103,4 @@ img {
     font-size: 28px;
     color: #555;
 }
-
-/* Footer Styling */
-footer {
-    background-color: rgb(164, 104, 39); 
-    color: rgb(0, 0, 0);
-    text-align: left;
-    padding: 70px 0;
-    margin-top: 70px;
-    position: relative;
-}
-
-footer h5 {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    margin: 0;
-}
-
-footer p {
-    font-size: 15px;
-    text-align: right;
-}
-
-footer .resources {
-    position: absolute;
-    bottom: 10px;
-    right: 10px; 
-    margin-top: 30px; 
-    font-size: 12px;  
-    text-align: left; 
-}
-
-footer .resources a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    display: block;
-}
-
-footer .resources a:hover {
-    text-decoration: underline;
-}
-
 
