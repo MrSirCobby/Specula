@@ -64,7 +64,10 @@ a:hover {
 
 .cart {
     font-size: 20px;
-    margin-left: 1040px;
+    text-align: right;
+    position: absolute;
+    top: 15px;
+    right: 50px;
 }
 
 /* Product Display */
