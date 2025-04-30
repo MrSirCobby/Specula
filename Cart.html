@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="Javascript/product-page.js"></script>
 </head>
 <body>
     <div class="TopBar">
-        <a href="index.html" class="largelink">Specula</a> 
-        <a href="eyeglasses.html">Eyeglasses</a> 
-        <a href="sunglasses.html">Sunglasses</a> 
-        <a href="cases.html">Cases</a> 
-        <a href="Cart.html" class="cart">🛒</a>
-    </div>
+        <a href="index.html" class="largelink">Specula</a>
+        <a href="eyeglasses.html">Eyeglasses</a>
+        <a href="sunglasses.html">Sunglasses</a>
+        <a href="cases.html">Cases</a>
+        <a href="Cart.html" class="cart">🛒
+          <span id="cart-count" class="cart-count">0</span>
+        </a>    
+      </div>
 
     <br><br><br>
 
@@ -30,6 +33,8 @@
                 <p>Total Cost: $<span id="total-cost">0.00</span></p>
             </div>
             <button id="purchase-btn">Proceed to Purchase</button>
+            <br><br>
+            <button id="clear-cart-btn">Clear Cart</button>
         
             <!-- Popup Modal -->
             <div id="popup">

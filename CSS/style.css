@@ -255,6 +255,21 @@ h4 {
     z-index:1001
 }
 
+/* Cart count styling */
+.cart-count {
+    position: absolute;
+    bottom: -5px;
+    left: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    z-index: 1100;
+}
+
+
 /* Footer Styling */
 footer {
     background-color: rgb(251, 213, 173); 

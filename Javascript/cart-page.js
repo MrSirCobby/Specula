@@ -55,3 +55,10 @@ function confirmPurchase() {
     closePopup();
     location.reload(); 
 }
+
+document.getElementById('clear-cart-btn').addEventListener('click', function () {
+    if (confirm("Are you sure you want to clear the cart?")) {
+        localStorage.removeItem('cart');
+        location.reload();
+    }
+});

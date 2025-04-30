@@ -14,7 +14,9 @@
     <a href="eyeglasses.html">Eyeglasses</a>
     <a href="sunglasses.html">Sunglasses</a>
     <a href="cases.html">Cases</a>
-    <a href="Cart.html" class="cart">🛒</a>
+    <a href="Cart.html" class="cart">🛒
+      <span id="cart-count" class="cart-count">0</span>
+    </a>    
   </div>
 
   <br><br><br><br>
@@ -29,16 +31,18 @@
   <div class="add">
     <button onclick="addToCart()">Add to Cart</button>
   </div>
-  
 
+  
   </div>
     
   </div>
-  
 
   <script src="Javascript/product-page.js"></script>
 
   <br><br>
+
+  <!-- Popup Notification -->
+  <div id="popup-notification" style="display:none;">Added to Cart</div>
 
 </body>
 </html>
