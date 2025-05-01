@@ -37,7 +37,6 @@ function showPopup() {
         }, 500);
     }, 3000);
 
-    // Allow clicking to close early
     popup.onclick = () => {
         popup.style.display = 'none';
     };
