@@ -1,103 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EyeGlasses</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="Javascript/product-selection.js"></script> 
-    <script defer src="Javascript/product-page.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EyeGlasses</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="Javascript/product-selection.js"></script>
+  <script defer src="Javascript/product-page.js"></script>
 </head>
+
 <body>
-    <div class="TopBar">
-        <a href="index.html" class="largelink">Specula</a> 
-        <a href="eyeglasses.html">Eyeglasses</a> 
-        <a href="sunglasses.html">Sunglasses</a> 
-        <a href="cases.html">Cases</a> 
-        <a href="Cart.html" class="cart">🛒
-          <span id="cart-count" class="cart-count">0</span>
-        </a>    
+
+  <!-- Top Bar -->
+  <div class="TopBar">
+    <a href="index.html" class="largelink">Specula</a>
+    <a href="eyeglasses.html">Eyeglasses</a>
+    <a href="sunglasses.html">Sunglasses</a>
+    <a href="cases.html">Cases</a>
+    <a href="Cart.html" class="cart">🛒
+      <span id="cart-count" class="cart-count">0</span>
+    </a>
+  </div>
+
+  <br><br><br><br>
+  <h1>Eyeglasses</h1>
+
+  <!-- Eyeglasses Products -->
+  <div class="productset">
+
+    <!-- ClearSight -->
+    <div class="product">
+      <a href="product.html" onclick="selectProduct('ClearSight', 49.99, 'Images/Best1.png', 'Crystal-clear lenses in a lightweight TR90 frame. Medium fit with 140mm temples, ideal for daily wear.')">
+        <img src="Images/Best1.png" alt="Best1">
+      </a>
+      <p class="product-name">ClearSight</p>
+      <p class="product-cost">$49.99</p>
     </div>
 
-    <br><br><br><br>
-    <h1>Eyeglasses</h1>
-
-    <div class="productset">
-        <div class="product">
-            <a href="product.html" onclick="selectProduct('ClearSight', 49.99, 'Images/Best1.png')">
-              <img src="Images/Best1.png" alt="Best1">
-            </a>
-            <p class="product-name">ClearSight</p>
-            <p class="product-cost">$49.99</p>
-          </div>
-    
-          <!-- Product 2 -->
-          <div class="product">
-            <a href="product.html" onclick="selectProduct('VisionPlus', 59.99, 'Images/Best2.png')">
-              <img src="Images/Best2.png" alt="Best2">
-            </a>
-            <p class="product-name">VisionPlus</p>
-            <p class="product-cost">$59.99</p>
-          </div>
-    
-          <!-- Product 3 -->
-          <div class="product">
-            <a href="product.html" onclick="selectProduct('ModernGaze', 42.35, 'Images/Glasses.png')">
-              <img src="Images/Glasses.png" alt="Glasses1">
-            </a>
-            <p class="product-name">ModernGaze</p>
-            <p class="product-cost">$42.35</p>
-          </div>
-    
-          <!-- Product 4 -->
-          <div class="product">
-            <a href="product.html" onclick="selectProduct('Teal', 62.79, 'Images/Glasses1.png')">
-              <img src="Images/Glasses1.png" alt="Glasses2">
-            </a>
-            <p class="product-name">Teal</p>
-            <p class="product-cost">$62.79</p>
-          </div>
-    
-          <!-- Product 5 -->
-          <div class="product">
-            <a href="product.html" onclick="selectProduct('UrbanLite', 54.99, 'Images/Best5.png')">
-              <img src="Images/Best5.png" alt="Best5">
-            </a>
-            <p class="product-name">UrbanLite</p>
-            <p class="product-cost">$54.99</p>
-          </div>
-    
-          <!-- Product 6 -->
-          <div class="product">
-            <a href="product.html" onclick="selectProduct('Vintage', 48.22, 'Images/Glasses3.png')">
-              <img src="Images/Glasses3.png" alt="Best6">
-            </a>
-            <p class="product-name">Vintage</p>
-            <p class="product-cost">$48.22</p>
-          </div>
-
-          <!-- Product 7 -->
-          <div class="product">
-            <a href="product.html" onclick="selectProduct('NavyBlue', 56.78, 'Images/Glasses5.png')">
-              <img src="Images/Glasses5.png" alt="Best6">
-            </a>
-            <p class="product-name">NavyBlue</p>
-            <p class="product-cost">$56.78</p>
-          </div>
+    <!-- VisionPlus -->
+    <div class="product">
+      <a href="product.html" onclick="selectProduct('VisionPlus', 59.99, 'Images/Best2.png', 'Premium acetate frame with anti-glare lenses. Classic 52-18-140 size, perfect for office and screen use.')">
+        <img src="Images/Best2.png" alt="Best2">
+      </a>
+      <p class="product-name">VisionPlus</p>
+      <p class="product-cost">$59.99</p>
     </div>
 
+    <!-- ModernGaze -->
+    <div class="product">
+      <a href="product.html" onclick="selectProduct('ModernGaze', 42.35, 'Images/Glasses.png', 'Minimalist metal frame with a matte finish. Narrow 49-17-135 sizing, great for smaller faces or refined looks.')">
+        <img src="Images/Glasses.png" alt="Glasses1">
+      </a>
+      <p class="product-name">ModernGaze</p>
+      <p class="product-cost">$42.35</p>
+    </div>
 
-    <br><br><br><br><br>
+    <!-- Teal -->
+    <div class="product">
+      <a href="product.html" onclick="selectProduct('Teal', 62.79, 'Images/Glasses1.png', 'Vibrant teal acetate frame with flexible arms. Comfortable 51-19-145 sizing, ideal for both style and function.')">
+        <img src="Images/Glasses1.png" alt="Glasses2">
+      </a>
+      <p class="product-name">Teal</p>
+      <p class="product-cost">$62.79</p>
+    </div>
 
-    <footer>
-        <h5>By Colby & Atsuto</h5>
-        <div class="resources">
-            <p>Resources Used</p>
-            <ul>
-                <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools</a>
-                <a href="https://groklearning.com/" target="_blank">Groklearning</a>
-            </ul>
-        </div>
-    </footer>
+    <!-- UrbanLite -->
+    <div class="product">
+      <a href="product.html" onclick="selectProduct('UrbanLite', 54.99, 'Images/Best5.png', 'Urban-chic stainless steel frame. 53mm lenses with silicone nose pads for all-day comfort.')">
+        <img src="Images/Best5.png" alt="Best5">
+      </a>
+      <p class="product-name">UrbanLite</p>
+      <p class="product-cost">$54.99</p>
+    </div>
+
+    <!-- Vintage -->
+    <div class="product">
+      <a href="product.html" onclick="selectProduct('Vintage', 48.22, 'Images/Glasses3.png', 'Classic tortoiseshell design in a bold round frame. 50-21-145 sizing, inspired by timeless retro trends.')">
+        <img src="Images/Glasses3.png" alt="Glasses3">
+      </a>
+      <p class="product-name">Vintage</p>
+      <p class="product-cost">$48.22</p>
+    </div>
+
+    <!-- NavyBlue -->
+    <div class="product">
+      <a href="product.html" onclick="selectProduct('NavyBlue', 56.78, 'Images/Glasses5.png', 'Deep navy blue matte frame with silver accents. Wide 54-18-145 fit, ideal for everyday wear with subtle flair.')">
+        <img src="Images/Glasses5.png" alt="Glasses5">
+      </a>
+      <p class="product-name">NavyBlue</p>
+      <p class="product-cost">$56.78</p>
+    </div>
+
+  </div>
+
+  <br><br><br><br><br>
+
+  <!-- Footer -->
+  <footer>
+    <h5>By Colby & Atsuto</h5>
+    <div class="resources">
+      <p>Resources Used</p>
+      <ul>
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools</a>
+        <a href="https://groklearning.com/" target="_blank">Groklearning</a>
+      </ul>
+    </div>
+  </footer>
+
 </body>
 </html>

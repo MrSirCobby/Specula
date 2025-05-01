@@ -8,17 +8,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cartItems.forEach((item, index) => {
         totalCost += parseFloat(item.price);
-
+    
         const itemElement = document.createElement('div');
+        itemElement.className = 'cart-item'; 
         itemElement.innerHTML = `
-            <img src="${item.image}" alt="${item.name}" style="width:300px; height:auto;">
-            <p>${item.name}</p>
-            <p>$${item.price}</p>
-            <button onclick="removeFromCart(${index})">Remove</button>
-            <hr>
+            <img src="${item.image}" alt="${item.name}">
+            <div class="item-details">
+                <p class="item-name">${item.name}</p>
+                <p class="item-cost">$${item.price}</p>
+                <p class="item-descript">${item.description}</p> 
+                <button onclick="removeFromCart(${index})">Remove</button>
+            </div>
         `;
+        
         cartContainer.appendChild(itemElement);
     });
+    
 
     // Update totals
     totalItemsElement.textContent = cartItems.length;

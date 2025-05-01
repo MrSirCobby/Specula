@@ -2,20 +2,29 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('product-name').innerText = localStorage.getItem('productName');
     document.getElementById('product-price').innerText = "$" + localStorage.getItem('productPrice');
     document.getElementById('product-image').src = localStorage.getItem('productImage');
+    document.getElementById('product-descript').innerText = localStorage.getItem('productDescript'); 
 });
+
 
 // Function to add to cart
 function addToCart() {
     const productName = localStorage.getItem('productName');
     const productPrice = localStorage.getItem('productPrice');
     const productImage = localStorage.getItem('productImage');
+    const productDescription = localStorage.getItem('productDescript');  
 
-    const product = { name: productName, price: productPrice, image: productImage };
+    const product = { 
+        name: productName, 
+        price: productPrice, 
+        image: productImage, 
+        description: productDescription  
+    };
     addToCartStorage(product);
 
     showPopup();        
     updateCartCount();  
 }
+
 
 // Cart data
 function addToCartStorage(product) {
@@ -38,6 +47,7 @@ function showPopup() {
     }, 3000);
 
     popup.onclick = () => {
+        window.location.href = 'Cart.html';
         popup.style.display = 'none';
     };
 }
