@@ -270,13 +270,13 @@ h4 {
     border: none;
     padding: 8px 14px;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .item-details button:hover {
-    background-color: #922c2c;
+    background-color: #731e1e;
 }
 
 /* Checkout */
@@ -322,6 +322,39 @@ h4 {
     border:2px solid #333; 
     border-radius:10px; 
     z-index:1001
+}
+
+/* Buttons */
+#purchase-btn {
+    align-self:flex-end;
+    background-color: #16911c;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#purchase-btn:hover {
+    background-color: #296422;
+}
+
+#clear-cart-btn {
+    align-self:flex-end;
+    background-color: #b34040;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#clear-cart-btn:hover {
+    background-color: #531717;
 }
 
 /* Cart count styling */
