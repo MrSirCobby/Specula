@@ -29,7 +29,16 @@ function addToCart() {
 // Cart data
 function addToCartStorage(product) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    cart.push(product);
+
+    const existingItem = cart.find(item => item.name === product.name && item.price === product.price);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        product.quantity = 1;
+        cart.push(product);
+    }
+
     localStorage.setItem('cart', JSON.stringify(cart));
 }
 

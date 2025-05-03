@@ -217,7 +217,7 @@ h4 {
     text-align: center;
 }
 
-/* === Cart Item Layout === */
+/* Cart Item Layout*/
 .cart-item {
     display: flex;
     align-items: center;
@@ -227,7 +227,7 @@ h4 {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     max-width: 650px;
-    border: 2px solid #f9dfd7;
+    border: 2px solid #f7e3dc;
 }
 
 /* Image Styling */
@@ -237,7 +237,6 @@ h4 {
     object-fit: cover;
 }
 
-/* Right-side Text Section */
 .item-details {
     display: flex;
     flex-direction: column;
@@ -245,16 +244,22 @@ h4 {
     flex: 1;
 }
 
+.item-descript {
+    font-size: 14px;
+    text-align: left;
+    margin-right: 30px;
+}
+
 /* Item Name */
 .item-name {
     align-self: flex-start;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     margin: 5px 0 5px 0;
     color: #333;
 }
 
-/* Item Price */
+/* Item Price, Description */
 .item-cost {
     align-self: flex-start;
     font-size: 16px;

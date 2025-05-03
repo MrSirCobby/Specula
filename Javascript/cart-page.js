@@ -5,37 +5,46 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalCostElement = document.getElementById('total-cost');
 
     let totalCost = 0;
+    let totalItems = 0;
 
     cartItems.forEach((item, index) => {
-        totalCost += parseFloat(item.price);
-    
+        const quantity = item.quantity || 1;
+        totalItems += quantity;
+        totalCost += parseFloat(item.price) * quantity;
+
         const itemElement = document.createElement('div');
-        itemElement.className = 'cart-item'; 
+        itemElement.className = 'cart-item';
         itemElement.innerHTML = `
             <img src="${item.image}" alt="${item.name}">
             <div class="item-details">
                 <p class="item-name">${item.name}</p>
-                <p class="item-cost">$${item.price}</p>
+                <p class="item-cost">$${item.price} x ${quantity} = $${(item.price * quantity).toFixed(2)}</p>
                 <p class="item-descript">${item.description}</p> 
                 <button onclick="removeFromCart(${index})">Remove</button>
             </div>
         `;
-        
+
         cartContainer.appendChild(itemElement);
     });
-    
 
-    // Update totals
-    totalItemsElement.textContent = cartItems.length;
+    totalItemsElement.textContent = totalItems;
     totalCostElement.textContent = totalCost.toFixed(2);
 });
 
+
 function removeFromCart(index) {
     let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-    cartItems.splice(index, 1);
+
+    if (cartItems[index].quantity > 1) {
+        cartItems[index].quantity -= 1;
+    } else {
+        cartItems.splice(index, 1);
+    }
+
     localStorage.setItem('cart', JSON.stringify(cartItems));
     location.reload();
 }
+
 
 document.getElementById('purchase-btn').addEventListener('click', function () {
     document.getElementById('popup').style.display = 'block';

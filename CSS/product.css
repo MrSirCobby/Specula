@@ -6,28 +6,32 @@ body {
 
 /* Checkout */
 .add{
-    margin-right: 180px;
+    margin-top: 50px;
+    text-align: center;
     font-size: 30px; 
-    border: 2px solid #000000;
     border-radius: 15px;
 }
 
 .add:hover{
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    text-decoration: none;
+    background-color: #296422;
 }
 
 
 /* Button */
 button{
-    outline: none;
+    align-self:flex-end;
+    background-color: #bf9862;
+    color: white;
     border: none;
-    padding: 50px;
+    padding: 20px 80px;
+    border-radius: 6px;
+    font-size: 14px;
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 5px;
-    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #977b61;
 }
 
 /* Top Bar */
@@ -75,28 +79,35 @@ a:hover {
 /* Product Display */
 .display {
     display: flex;
+    flex-direction: column; /* Add this line */
     align-items: center;
     justify-content: center;
-    border: 2px solid #ccc;
+    border: 2px solid rgb(42, 42, 42);
     padding: 40px;
-    margin: 80px auto;
-    max-width: 1200px; 
-    background-color: white;
+    margin: 10px auto;
+    max-width: 800px;  /* Optional: reduce width for better layout */
+    background-color: rgb(255, 247, 237);
     border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(255, 192, 158, 0.15);
     position: relative;
 }
 
+
 img {
-    width: 400px; 
+    width: 400px;
     height: auto;
-    margin-right: 60px;
+    margin: 0 auto 30px auto; /* Stack with margin below */
     border-radius: 10px;
+    display: block;
+}
+
+#product-descript {
+    font-size: 20px;
+    margin: 30px 70px 0 70px;
 }
 
 .product-info {
-    text-align: left;
-    flex: 1; 
+    text-align: center;
 }
 
 .product-info h3 {
