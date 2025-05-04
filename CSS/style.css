@@ -381,39 +381,90 @@ h4 {
 footer {
     background-color: rgb(251, 213, 173); 
     color: rgb(0, 0, 0);
-    text-align: left;
-    padding: 70px;
+    padding: 40px 70px;
     margin-top: 30px;
-    position: relative;
+    font-size: 14px;
 }
 
-footer h5 {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    border-top: 1px solid #000000;
+    padding-top: 20px;
+}
+
+/* Each section inside footer */
+footer .branding,
+footer .resources,
+footer .socials {
+    flex: 1;
+    min-width: 180px;
+    padding: 10px 20px;
+    border-left: 1px solid #000000;
+    text-align: left;
+}
+
+footer .branding {
+    border-left: none; 
+}
+
+footer .branding h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Headings */
+footer .resources p,
+footer .socials p {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Lists */
+footer .resources ul,
+footer .socials ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
-footer p {
-    font-size: 15px;
-    text-align: right;
+footer .resources li,
+footer .socials li {
+    margin-bottom: 6px;
 }
 
-footer .resources {
-    position: absolute;
-    bottom: 10px;
-    right: 10px; 
-    margin-top: 30px; 
-    font-size: 12px;  
-    text-align: left; 
-}
-
-footer .resources a {
+footer .resources a,
+footer .socials a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    display: block;
 }
 
-footer .resources a:hover {
+footer .resources a:hover,
+footer .socials a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 700px) {
+    .footer-content {
+        flex-direction: column;
+        border-top: none;
+        border-left: none;
+        gap: 0;
+    }
+
+    footer .branding,
+    footer .resources,
+    footer .socials {
+        border-left: none;
+        padding: 15px 0;
+    }
+
+    footer .branding {
+        border-top: none;
+    }
+}
+
